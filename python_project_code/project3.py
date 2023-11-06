@@ -16,7 +16,7 @@ def read_pdf_with_page(read_path,read_mode,page):
     pdfReader = PyPDF2.PdfReader(file_obj)
 
     pageObj = pdfReader.getPage(page)
-   # pageObj = pdfReader.pages[page]
+   
 
     text=pageObj.extract_text()
     file_obj.close()
